@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.payment-plan {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: hsla(225, 100%, 94%, 0.404);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 3rem 0 0;
+}
+
+.hero-img {
+  border-radius: 20px 20px 0 0;
+  width: 450px;
+}
+
+.budget {
+  font-size: 16px;
+  color: #777;
+}
+
+.cancel {
+  font-weight: bold;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel:active {
+  color: hsl(223, 47%, 23%);
+}
+
+.change-button {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  color: hsl(245, 75%, 52%);
+}
+
+.change-button:active {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.button {
+  background: none;
+  text-decoration: none;
+  border: none;
+  width: 350px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+}
+
+.payment {
+  border-radius: 10px;
+  color: #f7f7f7;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: rgba(38, 57, 77, 0.644) 0px 20px 30px -10px;
+}
+
+.payment:active {
+  background-color: hsla(245, 75%, 52%, 0.541);
+}
+
+.icon {
+  width: 50px;
+}
+
+.content {
+  width: 350px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  color: hsl(224, 23%, 55%);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+  .container {
+    width: 375px;
+  }
+  .hero-img {
+    width: 375px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .content {
+    font-size: 16px;
+  }
+  .button {
+    width: 280px;
+  }
+  .payment-plan {
+    width: 270px;
+  }
+  .icon {
+    width: 45px;
+  }
+  .plan-type {
+    font-size: 14px;
+  }
+  .budget {
+    font-size: 12px;
+  }
+  .change-button {
+    font-size: 14px;
+  }
+} ;
